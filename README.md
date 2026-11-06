@@ -1,16 +1,97 @@
-## Hi there 👋
+<!-- ===================== CABEÇALHO / HEADER ===================== -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F3A,100:14B8A6&height=180&section=header&text=José%20Pedro%20Rocha&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Arquiteto%20%26%20Guitarrista%20%7C%20Architect%20%26%20Guitarist&descAlignY=58&descSize=16" alt="José Pedro Rocha" />
+</p>
 
-<!--
-**josepedrorocha-star/josepedrorocha-star** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=1000&color=14B8A6&center=true&vCenter=true&width=600&lines=A+projetar+espa%C3%A7os+e+c%C3%B3digo;A+afinar+guitarras+e+algoritmos;Designing+spaces+and+code;Tuning+guitars+and+algorithms" alt="A projetar espaços e código | Designing spaces and code" />
+</p>
 
-Here are some ideas to get you started:
+<p align="center">
+  <a href="#pt">🇵🇹 Português</a> &nbsp;|&nbsp; <a href="#en">🇬🇧 English</a>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+<a id="pt"></a>
+
+## 🇵🇹 Português
+
+**`Arquiteto · Guitarrista`**
+
+Chamo-me José Pedro Rocha e sou arquiteto e guitarrista, no Algarve, Portugal. Não sou programador: sou alguém com vontade de criar aplicações úteis para o dia a dia e para a música, e faço-o com a ajuda de ferramentas de inteligência artificial. Assino os meus projetos como **jprocha-pt** e aqui partilho o que vou construindo. Também falo destes temas no meu canal de YouTube **Blueprint & Riff**, entre a arquitetura, a guitarra e a tecnologia.
+
+<a id="en"></a>
+
+## 🇬🇧 English
+
+**`Architect · Guitarist`**
+
+My name is José Pedro Rocha. I'm an architect and guitarist based in the Algarve, Portugal. I'm not a programmer: I'm someone who enjoys creating useful apps for everyday life and for music, and I build them with the help of AI tools. I sign my projects as **jprocha-pt** and this is where I share what I make. I also talk about these topics on my YouTube channel **Blueprint & Riff**, where architecture, guitar and technology meet.
+
+<p>
+  <a href="https://www.youtube.com/@BlueprintRiff">
+    <img src="https://img.shields.io/badge/YouTube-Blueprint%20%26%20Riff-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Blueprint & Riff" />
+  </a>
+  <a href="https://github.com/josepedrorocha-star?tab=repositories&sort=stargazers">
+    <img src="https://custom-icon-badges.demolab.com/github/stars/josepedrorocha-star?color=14B8A6&style=for-the-badge&labelColor=0B1F3A&logo=star&label=Estrelas%20%7C%20Stars" alt="Estrelas | Stars" />
+  </a>
+  <a href="https://github.com/josepedrorocha-star?tab=followers">
+    <img src="https://custom-icon-badges.demolab.com/github/followers/josepedrorocha-star?color=14B8A6&labelColor=0B1F3A&style=for-the-badge&logo=person-add&label=Seguidores%20%7C%20Followers&logoColor=white" alt="Seguidores | Followers" />
+  </a>
+</p>
+
+---
+
+### 🎸 Projeto em destaque · Featured project
+
+<a href="https://github.com/josepedrorocha-star/pocket-master-web-ai">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=josepedrorocha-star&repo=pocket-master-web-ai&theme=tokyonight" alt="SONICAKE Pocket Master Web-AI" />
+</a>
+
+**SONICAKE Pocket Master Web-AI**
+- 🇵🇹 Editor, timbres com IA, IRs, afinador, bateria, looper e modo palco para a pedaleira Sonicake Pocket Master (projeto não oficial).
+- 🇬🇧 Editor, AI-generated tones, IRs, tuner, drums, looper and stage mode for the Sonicake Pocket Master pedal (unofficial project).
+
+---
+
+### 🤖 Com que são feitas as minhas apps · What my apps are made with
+
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" title="HTML" width="40" height="40" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" title="CSS" width="40" height="40" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="40" height="40" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" title="Git" width="40" height="40" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" title="GitHub" width="40" height="40" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code" width="40" height="40" />
+</p>
+
+---
+
+### 📊 Estatísticas · Stats
+
+<p>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=josepedrorocha-star&show_icons=true&theme=tokyonight&include_all_commits=true" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=josepedrorocha-star&theme=tokyonight&layout=compact&custom_title=Tecnologias%20%7C%20Languages&langs_count=6" alt="Top languages" />
+</p>
+
+<p>
+  <img src="https://streak-stats.demolab.com?user=josepedrorocha-star&theme=tokyonight" alt="Streak" />
+</p>
+
+---
+
+### 💙 Apoiar · Support
+
+🇵🇹 Se os meus projetos te forem úteis, podes apoiar o trabalho.
+🇬🇧 If you find my projects useful, you can support my work.
+
+<p>
+  <a href="https://paypal.me/jprochapt">
+    <img src="https://img.shields.io/badge/PayPal-Doar%20%7C%20Donate-003087?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14B8A6,100:0B1F3A&height=100&section=footer" alt="" />
+</p>
