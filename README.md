@@ -1,6 +1,6 @@
 <!-- ===================== CABEÇALHO / HEADER ===================== -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F3A,100:14B8A6&height=180&section=header&text=José%20Pedro%20Rocha&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Arquiteto%20%26%20Guitarrista%20%7C%20Architect%20%26%20Guitarist&descAlignY=58&descSize=16" alt="José Pedro Rocha" />
+  <img src="banner.svg" width="100%" alt="José Pedro Rocha" />
 </p>
 
 <p align="center">
@@ -45,9 +45,14 @@ My name is José Pedro Rocha. I'm an architect and guitarist based in the Algarv
 
 ### 🎸 Projeto em destaque · Featured project
 
-<a href="https://github.com/josepedrorocha-star/pocket-master-web-ai">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=josepedrorocha-star&repo=pocket-master-web-ai&theme=tokyonight" alt="SONICAKE Pocket Master Web-AI" />
-</a>
+<p>
+  <a href="https://github.com/josepedrorocha-star/pocket-master-web-ai">
+    <img src="https://img.shields.io/badge/Pocket%20Master%20Web--AI-Ver%20projeto%20%7C%20View%20project-14B8A6?style=for-the-badge&labelColor=0B1F3A&logo=github&logoColor=white" alt="SONICAKE Pocket Master Web-AI" />
+  </a>
+  <a href="https://github.com/josepedrorocha-star/pocket-master-web-ai/stargazers">
+    <img src="https://img.shields.io/github/stars/josepedrorocha-star/pocket-master-web-ai?style=for-the-badge&color=14B8A6&labelColor=0B1F3A&label=Estrelas%20%7C%20Stars" alt="Estrelas | Stars" />
+  </a>
+</p>
 
 **SONICAKE Pocket Master Web-AI**
 - 🇵🇹 Editor, timbres com IA, IRs, afinador, bateria, looper e modo palco para a pedaleira Sonicake Pocket Master (projeto não oficial).
@@ -62,18 +67,13 @@ My name is José Pedro Rocha. I'm an architect and guitarist based in the Algarv
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" title="CSS" width="40" height="40" />&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="40" height="40" />&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" title="Git" width="40" height="40" />&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" title="GitHub" width="40" height="40" />&nbsp;
+  <img src="https://cdn.simpleicons.org/github/white" alt="GitHub" title="GitHub" width="40" height="40" />&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code" width="40" height="40" />
 </p>
 
 ---
 
 ### 📊 Estatísticas · Stats
-
-<p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=josepedrorocha-star&show_icons=true&theme=tokyonight&include_all_commits=true" alt="GitHub Stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=josepedrorocha-star&theme=tokyonight&layout=compact&custom_title=Tecnologias%20%7C%20Languages&langs_count=6" alt="Top languages" />
-</p>
 
 <p>
   <img src="https://streak-stats.demolab.com?user=josepedrorocha-star&theme=tokyonight" alt="Streak" />
@@ -90,8 +90,4 @@ My name is José Pedro Rocha. I'm an architect and guitarist based in the Algarv
   <a href="https://paypal.me/jprochapt">
     <img src="https://img.shields.io/badge/PayPal-Doar%20%7C%20Donate-003087?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal" />
   </a>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14B8A6,100:0B1F3A&height=100&section=footer" alt="" />
 </p>
