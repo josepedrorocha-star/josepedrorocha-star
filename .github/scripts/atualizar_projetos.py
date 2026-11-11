@@ -26,7 +26,7 @@ MESES = ["jan", "fev", "mar", "abr", "mai", "jun",
          "jul", "ago", "set", "out", "nov", "dez"]
 
 
-def pedir(url, token):
+def pedir(url, token, com_cabecalhos=False):
     cabecalhos = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "atualizar-projetos",
@@ -35,7 +35,23 @@ def pedir(url, token):
         cabecalhos["Authorization"] = f"Bearer {token}"
     pedido = urllib.request.Request(url, headers=cabecalhos)
     with urllib.request.urlopen(pedido) as resposta:
-        return json.load(resposta)
+        dados = json.load(resposta)
+        return (dados, resposta.headers) if com_cabecalhos else dados
+
+
+def contar_privados_na_ficha(token):
+    """Lê o número de privados na ficha do utilizador (GET /user)."""
+    try:
+        ficha, cab = pedir("https://api.github.com/user", token, True)
+    except Exception as erro:  # chave inválida ou sem permissão
+        print(f"Não consegui ler a ficha do utilizador: {erro}")
+        return None
+    escopos = cab.get("X-OAuth-Scopes")
+    tipo = ("clássica, permissões: " + (escopos or "nenhuma")
+            if escopos is not None else "fine-grained")
+    print(f"Tipo de chave: {tipo} | utilizador: {ficha.get('login')} | "
+          f"privados na ficha: {ficha.get('owned_private_repos')}")
+    return ficha.get("owned_private_repos")
 
 
 def obter_repos(token_pessoal):
@@ -65,13 +81,12 @@ def limpar(texto):
     return (texto or "").replace("|", "/").replace("\n", " ").strip()
 
 
-def construir_secao(repos, inclui_privados):
+def construir_secao(repos, n_privados):
     proprios = [r for r in repos
                 if not r.get("fork")
                 and r["name"].lower() not in IGNORAR
                 and r["owner"]["login"].lower() == UTILIZADOR.lower()]
     publicos = [r for r in proprios if not r.get("private")]
-    privados = [r for r in proprios if r.get("private")]
     publicos.sort(key=lambda r: r.get("pushed_at") or "", reverse=True)
 
     linhas = []
@@ -94,8 +109,8 @@ def construir_secao(repos, inclui_privados):
         linhas.append("_Ainda não há projetos públicos · "
                       "No public projects yet._")
 
-    if inclui_privados and privados:
-        n = len(privados)
+    if n_privados:
+        n = n_privados
         pt = "projeto privado" if n == 1 else "projetos privados"
         en = "private project" if n == 1 else "private projects"
         linhas += [
@@ -110,14 +125,20 @@ def main():
     token_pessoal = os.environ.get("PROFILE_TOKEN", "").strip()
     if len(sys.argv) > 1:  # modo de teste: ler repositórios de um ficheiro
         with open(sys.argv[1], encoding="utf-8") as f:
-            repos, inclui_privados = json.load(f), True
+            repos = json.load(f)
+        n_privados = sum(1 for r in repos if r.get("private") and not r.get("fork"))
     else:
-        repos, inclui_privados = obter_repos(token_pessoal)
-        privados = sum(1 for r in repos if r.get("private"))
+        repos, _ = obter_repos(token_pessoal)
+        n_privados = sum(1 for r in repos
+                         if r.get("private") and not r.get("fork"))
         print(f"Chave pessoal: {'sim' if token_pessoal else 'não'} | "
-              f"repositórios vistos: {len(repos)} | privados: {privados}")
+              f"repositórios vistos: {len(repos)} | privados: {n_privados}")
+        if token_pessoal:
+            na_ficha = contar_privados_na_ficha(token_pessoal)
+            if na_ficha:
+                n_privados = max(n_privados, na_ficha)
 
-    secao = construir_secao(repos, inclui_privados)
+    secao = construir_secao(repos, n_privados)
     with open(README, encoding="utf-8") as f:
         conteudo = f.read()
     padrao = re.compile(re.escape(INICIO) + r".*?" + re.escape(FIM), re.S)
