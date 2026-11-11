@@ -60,6 +60,16 @@ My name is José Pedro Rocha. I'm an architect and guitarist based in the Algarv
 
 ---
 
+### 🗂️ Os meus projetos · My projects
+
+<!-- Esta lista é atualizada automaticamente todos os dias. Não editar à mão entre as marcas. -->
+<!-- This list updates automatically every day. Do not edit by hand between the markers. -->
+<!-- PROJETOS:INICIO -->
+_A lista de projetos aparece aqui na próxima atualização · The project list will appear here on the next update._
+<!-- PROJETOS:FIM -->
+
+---
+
 ### 🤖 Com que são feitas as minhas apps · What my apps are made with
 
 <p>

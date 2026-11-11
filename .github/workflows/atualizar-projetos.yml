@@ -1,0 +1,41 @@
+name: Atualizar projetos no perfil
+
+on:
+  schedule:
+    - cron: "23 5 * * *"   # todos os dias por volta das 05:23 (hora de Lisboa no inverno)
+  workflow_dispatch:        # botão "Run workflow" para atualizar na hora
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/atualizar_projetos.py"
+      - ".github/workflows/atualizar-projetos.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar a lista de projetos
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: python .github/scripts/atualizar_projetos.py
+
+      - name: Guardar alterações
+        run: |
+          if git diff --quiet README.md; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Atualizar lista de projetos"
+          git push
