@@ -113,6 +113,9 @@ def main():
             repos, inclui_privados = json.load(f), True
     else:
         repos, inclui_privados = obter_repos(token_pessoal)
+        privados = sum(1 for r in repos if r.get("private"))
+        print(f"Chave pessoal: {'sim' if token_pessoal else 'não'} | "
+              f"repositórios vistos: {len(repos)} | privados: {privados}")
 
     secao = construir_secao(repos, inclui_privados)
     with open(README, encoding="utf-8") as f:
