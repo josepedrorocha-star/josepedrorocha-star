@@ -67,7 +67,7 @@ My name is José Pedro Rocha. I'm an architect and guitarist based in the Algarv
 <!-- PROJETOS:INICIO -->
 | Projeto · Project | Descrição · Description | Atualizado · Updated |
 |---|---|---|
-| [**riff-studio**](https://github.com/josepedrorocha-star/riff-studio) | Escrever, praticar e tocar tablaturas no navegador · Write, practice and play guitar tabs in your browser | 11 nov 2026 |
+| [**riff-studio**](https://github.com/josepedrorocha-star/riff-studio)<br>[▶ Abrir · Open](https://josepedrorocha-star.github.io/riff-studio/) | Escrever, praticar e tocar tablaturas no navegador · Write, practice and play guitar tabs in your browser | 11 nov 2026 |
 | [**pocket-master-web-ai**](https://github.com/josepedrorocha-star/pocket-master-web-ai)<br>[▶ Abrir · Open](https://josepedrorocha-star.github.io/pocket-master-web-ai/) | Editor, timbres Web com IA, IRs, afinador, bateria, looper e modo palco para a Sonicake Pocket Master (não oficial) | 1 nov 2026 |
 
 🔒 **+4** projetos privados em desenvolvimento · **+4** private projects in progress
